@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="=" ie=edge">
+    <title>Register CV</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <section class="textos-header">
+            <h1>Crea tu CV de una manera fácil</h1>
+        </section>
+        <div class=" wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 351.85,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #ffffff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="form-register">
+            <div class="content">
+                <h3>Datos de contacto y contenido</h3>
+                <form action="" method="post">
+                    <p>
+                        <label for="nombre">Nombre: <abbr title="required" aria-label="required">*</abbr> </label>
+                        <input class="field " type="text" id="nombre">
+                    </p>
+                    <p>
+                        <label for="apellido">Apellidos: <abbr title="required" aria-label="required">*</abbr> </label>
+                        <input class="field" type="text" id="apellidos">
+                    </p>
+                    <p>
+                        <label for="fecha">Fecha de Nacimiento: </label>
+                        <input class="field" type="date" id=fecha>
+                    </p>
+
+                    <p>
+                        <label for="direccion">Dirección: </label>
+                        <input class="field" type="text" id="direccion">
+                    </p>
+                    <p>
+                        <label for="email">Correo:</label>
+                        <input class="field" type="email" id="email">
+                    </p>
+                    <p>
+                        <label for="website">Teléfono:</label>
+                        <input class="field" type="tel" id="website">
+                    </p>
+                    <p>
+                        <label for="website">Sitio Web:</label>
+                        <input class="field" type="text" id="website">
+                    </p>
+
+                    <p class="block">
+                        <label for="RSocial">Redes Sociales:</label>
+                    </p>
+                    <p class="block">(agrega el link de tus redes sociales)</p>
+                    <p class="block">
+                        <img alt="Siguenos en Facebook"
+                            src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png"
+                            width=32 height=32 /></a>
+                        <input class="RS" type="text" id=fb>
+                    </p>
+                    <p class="block">
+                        <img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png"
+                            width=32 height=32 /></a>
+                        <input class="RS" type="text" id=twitter>
+                    </p>
+                    <p class="block">
+                        <img src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png"
+                            width=32 height=32 /></a>
+                        <input class="RS" type="text" id=in>
+                    </p>
+                    <p class="block">
+                        <img src="./img/svg/002-instagram.svg" width=32 height=32 /></a>
+                        <input class="RS" type="text" id=in>
+                    </p>
+                    <p class="block">
+                        <label for="descripcion">Escribe una breve descripción sobre ti:</label>
+                    </p>
+                    <textarea class="block" id="descripcion" rows="5"></textarea>
+
+                    <p class=" block">
+                        <label for="foto">Añade una foto tuya:</label>
+                        <input class="field" type="file" id="foto" size="30">
+                    </p>
+                    <p class="block">Nivel: 1,2,3,4,5,6 siendo 1 el más bajo</p>
+                    <div class="habilidades" id="listas">
+                        <div class="habilidad">
+                            <p>
+                            <h1>Habilidades:</h1>
+                            <input class="contenido-skill" type="text" name="campo[]">
+                            </p>
+                            <div class="nivel">
+                                <p>
+                                <h1>Nivel:</h1>
+                                <input class="contenido-nivel" type="text" name="campo[]">
+                                </p>
+                            </div>
+                        </div>
+                        <input type="button" id="add_field" value="+">
+                    </div>
+                    <div class="software" id="lista">
+                        <div class="skill">
+                            <p>
+                            <h1>Software:</h1>
+                            <input class="contenido-skill" type="text" id="software1" name="campo[]">
+                            </p>
+                            <div class="nivel">
+                                <h2>Nivel</h2>
+                                <input class="contenido-nivel" type="text" id="nivel_software1" name="campo[]">
+                            </div>
+                        </div>
+                        <input type="button" id="add_field1" value="+">
+                    </div>
+
+
+                    <p class="block">
+                        <input class="boton" type="submit" value="Crear"></input>
+                    </p>
+
+                </form>
+            </div>
+
+
+            <div class="content-info">
+                <div class="experiencia" id="listas3">
+                    <div class="exp">
+                        <h1>Experiencia</h1>
+                        <p>
+                            <input class="contenido" type="text" id="cargo" placeholder="Cargo:"><br>
+                            <input class="contenido" type="text" id="empresa" placeholder="Empresa:">
+
+                        <div class="fecha">
+                            <label for="desde">Desde: </label>
+                            <input class="contenido" type="date" id="desde">
+                            <label for="hasta">Hasta: </label>
+                            <input class="contenido" type="date" id="hasta">
+                        </div>
+                        </p>
+                        <textarea class="descripcion" rows="3" cols="40" placeholder="Descripción"></textarea>
+                    </div>
+                    <input type="button" id="add_field3" value="+">
+                </div>
+                <div class="formacion" id="listas2">
+                    <div class="educacion"></div>
+                        <p>
+                        <h1>Formación</h1>
+                        <input class="contenido" type="text" id="educacion" placeholder="Educación:" name="campo[]"><br>
+                        <input class="contenido" type="text" id="institución" placeholder="Institución" name="campo[]">
+                        <div class="fecha">
+                            <label for="empresa">Fecha: </label>
+                            <input class="contenido" type="date" id="fecha" name="campo[]">
+                        </div>
+                        <textarea class="descripcion" rows="3" cols="40" placeholder="Descripción"
+                            name="campo[]"></textarea>
+                        </p>
+                    </div>
+                    <input type="button" id="add_field2" value="+">
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <p4>Phone</p4>
+                <p>(52) 5573648972</p>
+            </div>
+            <div class="content-foo">
+                <p4>Email</p4>
+                <p>creaCV@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <p4>Location</p4>
+                <p>Huehuetoca, Edo.de México</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Delia Nallely </h2>
+    </footer>
+</body>
+
+<script src="./JS/jquery-3.6.0.min.js"></script>
+<script src="./JS/all.js"></script>
+
+</html>
