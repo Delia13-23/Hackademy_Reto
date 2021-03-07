@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="=" ie=edge">
     <title>Register CV</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -25,153 +25,147 @@
             </svg></div>
     </header>
     <main>
-        <section class="form-register">
-            <div class="content">
-                <h3>Datos de contacto y contenido</h3>
-                <form action="" method="post">
-                    <p>
-                        <label for="nombre">Nombre: <abbr title="required" aria-label="required">*</abbr> </label>
-                        <input class="field " type="text" id="nombre">
-                    </p>
-                    <p>
-                        <label for="apellido">Apellidos: <abbr title="required" aria-label="required">*</abbr> </label>
-                        <input class="field" type="text" id="apellidos">
-                    </p>
-                    <p>
-                        <label for="fecha">Fecha de Nacimiento: </label>
-                        <input class="field" type="date" id=fecha>
-                    </p>
+        <form action="" method="post" id="form">
+            <h3>Datos de contacto y contenido</h3>
+            <section class="form-register">
+                <div class="content">
+                    <form action="" method="post">
+                        <p>
+                            <label for="nombre">Nombre: <abbr title="required" aria-label="required">*</abbr> </label>
+                            <input class="field " type="text" id="nombre" name="nombre">
+                        </p>
+                        <p>
+                            <label for="apellido">Apellidos: <abbr title="required" aria-label="required">*</abbr>
+                            </label>
+                            <input class="field" type="text" id="apellidos" name="apellidos">
+                        </p>
+                        <p>
+                            <label for="fecha">Fecha de Nacimiento: </label>
+                            <input class="field" type="date" id="fecha" name="fecha">
+                        </p>
 
-                    <p>
-                        <label for="direccion">Dirección: </label>
-                        <input class="field" type="text" id="direccion">
-                    </p>
-                    <p>
-                        <label for="email">Correo:</label>
-                        <input class="field" type="email" id="email">
-                    </p>
-                    <p>
-                        <label for="website">Teléfono:</label>
-                        <input class="field" type="tel" id="website">
-                    </p>
-                    <p>
-                        <label for="website">Sitio Web:</label>
-                        <input class="field" type="text" id="website">
-                    </p>
+                        <p>
+                            <label for="direccion">Dirección: </label>
+                            <input class="field" type="text" id="direccion" name="direccion">
+                        </p>
+                        <p>
+                            <label for="email">Correo:</label>
+                            <input class="field" type="email" id="email" name="email">
+                        </p>
+                        <p>
+                            <label for="telefono">Teléfono:</label>
+                            <input class="field" type="tel" id="telefono" name="telefono">
+                        </p>
+                        <p>
+                            <label for="website">Sitio Web:</label>
+                            <input class="field" type="text" id="website" name="website">
+                        </p>
 
-                    <p class="block">
-                        <label for="RSocial">Redes Sociales:</label>
-                    </p>
-                    <p class="block">(agrega el link de tus redes sociales)</p>
-                    <p class="block">
-                        <img alt="Siguenos en Facebook"
-                            src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png"
-                            width=32 height=32 /></a>
-                        <input class="RS" type="text" id=fb>
-                    </p>
-                    <p class="block">
-                        <img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png"
-                            width=32 height=32 /></a>
-                        <input class="RS" type="text" id=twitter>
-                    </p>
-                    <p class="block">
-                        <img src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png"
-                            width=32 height=32 /></a>
-                        <input class="RS" type="text" id=in>
-                    </p>
-                    <p class="block">
-                        <img src="./img/svg/002-instagram.svg" width=32 height=32 /></a>
-                        <input class="RS" type="text" id=in>
-                    </p>
-                    <p class="block">
-                        <label for="descripcion">Escribe una breve descripción sobre ti:</label>
-                    </p>
-                    <textarea class="block" id="descripcion" rows="5"></textarea>
+                        <p class="block">
+                            <label for="RSocial">Redes Sociales:</label>
+                        </p>
+                        <p class="block">(agrega el link de tus redes sociales)</p>
+                        <p class="block">
+                            <img alt="Siguenos en Facebook"
+                                src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png"
+                                width=32 height=32 /></a>
+                            <input class="RS" type="text" id="fb" name="fb">
+                        </p>
+                        <p class="block">
+                            <img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png"
+                                width=32 height=32 /></a>
+                            <input class="RS" type="text" id="twitter" name="twitter">
+                        </p>
+                        <p class="block">
+                            <img src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png"
+                                width=32 height=32 /></a>
+                            <input class="RS" type="text" id="linkedin" name="linkedin">
+                        </p>
+                        <p class="block">
+                            <img src="../img/svg/002-instagram.svg" width=32 height=32 /></a>
+                            <input class="RS" type="text" id="inst" name="inst">
+                        </p>
+                        <p class="block">
+                            <label for="descripcion">Escribe una breve descripción sobre ti:</label>
+                        </p>
+                        <textarea class="block" id="descripcion" name="descripcion" rows="5"></textarea>
 
-                    <p class=" block">
-                        <label for="foto">Añade una foto tuya:</label>
-                        <input class="field" type="file" id="foto" size="30">
-                    </p>
-                    <p class="block">Nivel: 1,2,3,4,5,6 siendo 1 el más bajo</p>
-                    <div class="habilidades" id="listas">
-                        <div class="habilidad">
-                            <p>
-                            <h1>Habilidades:</h1>
-                            <input class="contenido-skill" type="text" name="campo[]">
-                            </p>
-                            <div class="nivel">
+                        <p class=" block">
+                            <label for="foto">Añade una foto tuya:</label>
+                            <input class="field" type="file" id="file" name="foto" size="30">
+                        </p>
+                        <p class="block">Nivel: 1,2,3,4,5,6 siendo 1 el más bajo</p>
+                        <div class="habilidades" id="listas">
+                            <div class="habilidad">
                                 <p>
-                                <h1>Nivel:</h1>
-                                <input class="contenido-nivel" type="text" name="campo[]">
+                                <h1>Habilidades:</h1>
+                                <input class="contenido-skill" type="text" id="habilidad[]" name="habilidad[]">
                                 </p>
+                                <div class="nivel">
+                                    <p>
+                                    <h1>Nivel:</h1>
+                                    <input class="contenido-nivel" type="text" id="nivelH[]" name="nivelH[]">
+                                    </p>
+                                </div>
                             </div>
+                            <input type="button" id="add_field" value="+">
                         </div>
-                        <input type="button" id="add_field" value="+">
-                    </div>
-                    <div class="software" id="lista">
-                        <div class="skill">
+                        <div class="software" id="lista">
+                            <div class="skill">
+                                <p>
+                                <h1>Software:</h1>
+                                <input class="contenido-skill" type="text" id="software[]" name="software[]">
+                                </p>
+                                <div class="nivel">
+                                    <h2>Nivel</h2>
+                                    <input class="contenido-nivel" type="text" id="nivelS[]" name="nivelS[]">
+                                </div>
+                            </div>
+                            <input type="button" id="add_field1" value="+">
+                        </div>
+                </div>
+
+
+                <div class="content-info">
+                    <div class="experiencia" id="listas3">
+                        <div class="exp">
+                            <h1>Experiencia</h1>
                             <p>
-                            <h1>Software:</h1>
-                            <input class="contenido-skill" type="text" id="software1" name="campo[]">
-                            </p>
-                            <div class="nivel">
-                                <h2>Nivel</h2>
-                                <input class="contenido-nivel" type="text" id="nivel_software1" name="campo[]">
+                                <input class="contenido" type="text" id="cargo" name="cargo" placeholder="Cargo:"><br>
+                                <input class="contenido" type="text" id="empresa" name="empresa" placeholder="Empresa:">
+
+                            <div class="fecha">
+                                <label for="desde">Desde: </label>
+                                <input class="contenido" type="date" id="desde" name="desde">
+                                <label for="hasta">Hasta: </label>
+                                <input class="contenido" type="date" id="hasta" name="hasta">
                             </div>
+                            </p>
+                            <textarea class="descripcion" id="text_exp" name="text_exp"  rows="3" cols="40" placeholder="Descripción"></textarea>
                         </div>
-                        <input type="button" id="add_field1" value="+">
+                        <input type="button" id="add_field3" value="+">
                     </div>
-
-
-                    <p class="block">
-                        <input class="boton" type="submit" value="Crear"></input>
-                    </p>
-
-                </form>
-            </div>
-
-
-            <div class="content-info">
-                <div class="experiencia" id="listas3">
-                    <div class="exp">
-                        <h1>Experiencia</h1>
-                        <p>
-                            <input class="contenido" type="text" id="cargo" placeholder="Cargo:"><br>
-                            <input class="contenido" type="text" id="empresa" placeholder="Empresa:">
-
-                        <div class="fecha">
-                            <label for="desde">Desde: </label>
-                            <input class="contenido" type="date" id="desde">
-                            <label for="hasta">Hasta: </label>
-                            <input class="contenido" type="date" id="hasta">
+                    <div class="formacion" id="listas2">
+                        <div class="educacion">
+                            <p>
+                            <h1>Formación</h1>
+                            <input class="contenido" type="text" id="educacion[]" name="educacion[]" placeholder="Educación"><br>
+                            <input class="contenido" type="text" id="institucion[]" name="institucion[]" placeholder="Institución">
+                            <div class="fecha">
+                                <label for="empresa">Fecha: </label>
+                                <input class="contenido" type="date" id="fecha[]" name="fecha[]">
+                            </div>
+                            <textarea class="descripcion" id="text_educacion" name="text_educacion" rows="3" cols="40" placeholder="Descripción"></textarea>
+                            </p>
                         </div>
-                        </p>
-                        <textarea class="descripcion" rows="3" cols="40" placeholder="Descripción"></textarea>
+                        <input type="button" id="add_field2" value="+">
                     </div>
-                    <input type="button" id="add_field3" value="+">
                 </div>
-                <div class="formacion" id="listas2">
-                    <div class="educacion"></div>
-                        <p>
-                        <h1>Formación</h1>
-                        <input class="contenido" type="text" id="educacion" placeholder="Educación:" name="campo[]"><br>
-                        <input class="contenido" type="text" id="institución" placeholder="Institución" name="campo[]">
-                        <div class="fecha">
-                            <label for="empresa">Fecha: </label>
-                            <input class="contenido" type="date" id="fecha" name="campo[]">
-                        </div>
-                        <textarea class="descripcion" rows="3" cols="40" placeholder="Descripción"
-                            name="campo[]"></textarea>
-                        </p>
-                    </div>
-                    <input type="button" id="add_field2" value="+">
-                </div>
-
-
-
-
-            </div>
-        </section>
+                <p class="block">
+                    <input class="boton" type="submit" value="Crear"></input>
+                </p>
+            </section>
+        </form>
 
     </main>
     <footer>
@@ -193,7 +187,7 @@
     </footer>
 </body>
 
-<script src="./JS/jquery-3.6.0.min.js"></script>
-<script src="./JS/all.js"></script>
-
+<script src="../JS/jquery-3.6.0.min.js"></script>
+<script src="../JS/all.js"></script>
+<script src="../JS/app.js"></script>
 </html>

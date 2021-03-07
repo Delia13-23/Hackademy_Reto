@@ -8,8 +8,8 @@ $(document).ready(function () {
         e.preventDefault(); //prevenir novos clicks
         if (x < campos_max) {
             $("#listas").append(
-                '<div class="habilidad">\<p>\<input class="contenido-skill" type="text" name="campo[]">\</p>\
-                  <div class="nivel">\ <p>\<input class="contenido-nivel" type="text" name="campo[]">\</p>\</div>\
+                '<div class="habilidad">\<p>\<input class="contenido-skill" type="text" id="habilidad[] name="habilidad[]">\</p>\
+                  <div class="nivel">\ <p>\<input class="contenido-nivel" type="text" id="nivelH[]" name="nivelH[]">\</p>\</div>\
                   \<a href="#" class="remover_campo">X</a>\</div>'
             );
             x++;
@@ -29,8 +29,8 @@ $(document).ready(function () {
         e.preventDefault(); //prevenir novos clicks
         if (y < campos_max) {
             $("#lista").append(
-                '<div class="skill">\<input class="contenido-skill" type="text" id="software1" name="campo[]">\</p>\
-                <div class="nivel">\ <p>\<input class="contenido-nivel" type="text" id="nivel_software1" name="campo[]">\</div>\
+                '<div class="skill">\<input class="contenido-skill" type="text" id="software[]" name="software[]">\</p>\
+                <div class="nivel">\ <p>\<input class="contenido-nivel" type="text" id="nivelS[]" name="nivelS[]">\</div>\
                 <a href="#" class="remover_campo">X</a>\</div>'
             );
             y++;
@@ -40,7 +40,7 @@ $(document).ready(function () {
     $("#lista").on("click", ".remover_campo", function (e) {
         e.preventDefault();
         $(this).parent("div").remove();
-        x--;
+        y--;
     });
 });
 
@@ -54,11 +54,11 @@ $(document).ready(function () {
             $("#listas2").append(
                
                 '<div class="educacion>\
-                 <input class="contenido" type="text" id="institución" placeholder="Institución" name="campo[]">\
-                 <input class="contenido" type="text" id="educacion" placeholder="Educación:" name="campo[]">\<br>\
-                 <input class="contenido" type="text" id="institución" placeholder="Institución" name="campo[]">\
-                 <div class="fecha">\<label for="empresa">Fecha:</label>\<input class="contenido" type="date" id="fecha" name="campo[]">\</div>\
-                 <textarea class="descripcion" rows="3" cols="40" placeholder="Descripción" name="campo[]">\</textarea>\
+                 <input class="contenido" type="text" id="institucion[]" name="institucion[]" placeholder="Institución">\
+                 <input class="contenido" type="text" id="educacion[]"  name="educacion[]" placeholder="Educación">\<br>\
+                 <input class="contenido" type="text" id="institucion[]" name="institucion[]" placeholder="Institución">\
+                 <div class="fecha">\<label for="empresa">Fecha:</label>\<input class="contenido" type="date" id="fecha[]" name="fecha[]">\</div>\
+                 <textarea class="descripcion" id="text_educacion[]" name="text_educacion[]" rows="3" cols="40" placeholder="Descripción">\</textarea>\
                  <a href="#" class="remover_campo">X</a>\</div>'
             );
             z++;
@@ -68,10 +68,11 @@ $(document).ready(function () {
     $("#listas2").on("click", ".remover_campo", function (e) {
         e.preventDefault();
         $(this).parent("div").remove();
-        x--;
+        z--;
     });
 });
-//Educación
+
+//Experiencia
 var w=0;
 $(document).ready(function () {
     $("#add_field3").click(function (e) {
@@ -80,14 +81,14 @@ $(document).ready(function () {
             $("#listas3").append(
                
                 '<div class="exp">\<p>\
-                 <input class="contenido" type="text" id="cargo" placeholder="Cargo:"><br>\
-                 <input class="contenido" type="text" id="empresa" placeholder="Empresa:">\
+                 <input class="contenido" type="text" id="cargo" name="cargo" placeholder="Cargo:"><br>\
+                 <input class="contenido" type="text" id="empresa" name="empresa" placeholder="Empresa:">\
                  <div class="fecha">\
                     <label for="desde">\Desde:\</label>\
-                    <input class="contenido" type="date" id="desde">\
+                    <input class="contenido" type="date" id="desde" name="desde">\
                     <label for="hasta">\Hasta: </label>\
-                    <input class="contenido" type="date" id="hasta">\</div>\</p>\
-                 <textarea class="descripcion" rows="3" cols="40" placeholder="Descripción"></textarea>\
+                    <input class="contenido" type="date" id="hasta" name="hasta">\</div>\</p>\
+                 <textarea class="descripcion" id="text_exp" name="text_exp" rows="3" cols="40" placeholder="Descripción"></textarea>\
                  <a href="#" class="remover_campo">X</a>\</div>'
             );
             w++;
@@ -97,6 +98,6 @@ $(document).ready(function () {
     $("#listas3").on("click", ".remover_campo", function (e) {
         e.preventDefault();
         $(this).parent("div").remove();
-        x--;
+        w--;
     });
 });
