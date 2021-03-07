@@ -76,7 +76,7 @@ body{
    position: absolute;
    width: 27%;
    top: 440px;
-   left: 127px;
+   left: 125px;
    background-color:#1e2227; 
    padding: 30px;
    text-align: center;
@@ -175,7 +175,7 @@ li{
     position: absolute;
     width: 27%;
     top: 84.5px;
-    left:466px;
+    left:464px;
     margin: 0 auto;
     background-color: rgb(33, 37, 49);
     padding: 30px;
@@ -219,7 +219,7 @@ li{
    position: absolute;
    width: 27%;
    top: 440px;
-   left:802px;
+   left:793px;
    background-color: #1e2227;
    padding: 30px;
    text-align: center;
